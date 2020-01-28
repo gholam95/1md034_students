@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Donalds Burger</title>
-        <meta charset="utf-8"/>
-    </head>
-    <body>
+  <head>
+    <title>Affes Burger</title>
+    <!-- charset="utf-8 är attribut, den säger att vi får ha åäö"-->
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <main>
+      
+      <h1>Welcome to Affes Burger</h1>
 
-    </body>
+      <section>
+        <h2>Select burger</h2>
+        <p>Choose from our delicious selections of burgers </p>
+      </section>
+      <!--Table with our three burgers -->
+      <table>
+        <thead>
+          <th>The Veg Burger</th>
+          <th>The Affes Special</th>
+          <th>The Chicken Burgers</th>
+        </thead>
+        
+        <tbody>
+          <td><img src="img/first-burger.jpg" alt="picture of the first burger"
+                   title="Veg Burger",
+                   width="450"> </td>
+          <td><img src="img/second-burger.jp2" alt="picture of the second burger"
+                   title="Affes special",
+                   width="450"> </td>
+          <td><img src="img/third-burger.jpg" alt="picture of the third burger"
+                   title="Chicken Burger",
+                   width="450"> </td>
+        </tbody>
+        <tfoot>
+          <td> <ul>
+              <li>500 kCal</li>
+              <li>High quality Chinese vegan burgers</li>
+              <li>Homemade sauce</li>
+              <li>Both lactose and gluten free</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>1800 kCal</li>
+              <li>Classic cheese burger with bacon</li>
+              <li>Affes homemade special sauce </li>
+              <li>Contains Bacon</li>
+              <li>Does contains gluten and lactose</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>1000 kCal</li>
+              <li>Deep fried Turkish chicken </li>
+              <li>Homemade sauce</li>
+              <li>Does contains gluten</li>
+            </ul>
+          </td>
+        </tfoot>
+      </table>
+      
+      <section>
+        <h2>Customer information</h2>
+        <p>Please provide you contact information</p>
+        <p>
+          <label for="fullname">Full name</label><br>
+          <!--Element can be given names, and in case of form, the name attribute is used -->
+          <input type="text" id="fullname" name="name" required="required"
+                 placeholder="First- and Last name">
+        </p>
+        <p>
+          <label for="email">E-mail</label><br>
+          <input type="email" id="email" name="email" required="required"
+                 placeholder="E-mail adress">
+        </p>
+        <p>
+          <label for="streename">Street</label><br>
+          <input type="text" id="streename" name="street" required="required"
+                 placeholder="Street name">
+        </p>
+        <p>
+          <label for="housenumber">House</label><br>
+          <input type="number" id="housenumber" name="housenumber" required="required"
+                 placeholder="House number">
+        </p>
+      </section>
+      
+    </main>
+    <hr>
+    
+    <footer> &COPY; 2025 Affes Inc. </footer>
+    
+  </body>
 </html>
-          
+
