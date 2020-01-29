@@ -6,13 +6,26 @@ body {
     font-size: 110%;
 }
 
+/*This is a class*/
 .allergic {
-    color: #48048C;
+    color: #ffffff;
 }
 
+
+/* gluten is a id name*/
 #gluten {
     text-transform: uppercase;
     font-weight: bold;
+}
+
+/*You can also be more specific with which element belonging to a specific class should be targeted. If you would write a.current, only anchors belonging to the current class would be affected but not any other elements that belongs to the same class.*/
+
+#burger {
+    Background-color: #000000;
+}
+
+#orderinformation {
+    
 }
 
 
