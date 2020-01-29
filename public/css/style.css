@@ -33,9 +33,24 @@ button:hover{
     cursor: pointer;
                           
 }
-table{
+table {
     width: 100%;
     margin: 0 auto;
 }
 
+section {
+    /*margin: 0 0 5% 5%;*/
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+button {
+    /*margin-left: 1%;*/
+    /*margin-top: 1%;*/
+    margin: 1% auto auto 1%;
+}
+
+#restaurantName {
+    margin-left: 3%;
+}
 
