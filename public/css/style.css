@@ -1,6 +1,18 @@
 /*You comment goes here*/
 
 body {
-    font-family: arial, sans-serif; font-style: normal;
+    font-family: arial, sans-serif;
+    font-style: normal;
     font-size: 110%;
 }
+
+.allergic {
+    color: #48048C;
+}
+
+#gluten {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
