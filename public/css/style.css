@@ -55,6 +55,7 @@ table {
 #headerpic {
     width: 94%;
     opacity: 0.5;
+    height: auto;
 }
 
 button {
@@ -65,6 +66,13 @@ button {
 
 #restaurantName {
     margin-left: 3%;
+    position: absolute;
+    padding: 100px 50px 14px;
+}
+
+#header {
+    height: 370px;
+    overflow: hidden;
 }
 
 
