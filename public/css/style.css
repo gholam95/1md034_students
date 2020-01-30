@@ -22,10 +22,12 @@ body {
 
 #burger {
     Background-color: #000000;
+    border: 2px dashed #ffffff;
 }
 
 #orderinformation {
-    
+    border: 2px dashed #000000;
+    padding: 2%;
 }
 
 button:hover{
@@ -53,4 +55,5 @@ button {
 #restaurantName {
     margin-left: 3%;
 }
+
 
