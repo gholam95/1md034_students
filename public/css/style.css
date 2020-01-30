@@ -26,6 +26,7 @@ body {
 }
 
 #orderinformation {
+    height: auto;
     border: 2px dashed #000000;
     padding: 2%;
 }
@@ -40,16 +41,14 @@ table {
     margin: 0 auto;
 }
 
-/*section {*/
-    /*margin: 0 0 5% 5%;*/
-    /*margin-left: 3%;
-
-    margin-right: 3%;
-}*/
+section {
+  /*  margin-left: 3%;
+    margin-right: 3%;*/
+}
 
 .differentSection {
     margin-left: 3%;
-    margin-right: 3%; 
+    margin-right: 3%;
 }
 
 #headerpic {
@@ -80,14 +79,6 @@ button {
     grid-template-columns: 33% 33% 33%;
     Background-color: #000000;
     color: #444;
-}
-
-.box {
-    Background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 150%;
 }
 
 .burger1 {
