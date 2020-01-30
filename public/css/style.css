@@ -3,7 +3,7 @@
 body {
     font-family: arial, sans-serif;
     font-style: normal;
-    font-size: 110%;
+    font-size: 100%;
 }
 
 /*This is a class*/
@@ -14,7 +14,7 @@ body {
 
 /* gluten is a id name*/
 #gluten {
-    text-transform: uppercase;
+    font-size: 90%;
     font-weight: bold;
 }
 
@@ -73,6 +73,33 @@ button {
 #header {
     height: 370px;
     overflow: hidden;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    Background-color: #000000;
+    color: #444;
+}
+
+.box {
+    Background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.burger1 {
+    grid-columm: 1;
+}
+
+.burger2 {
+    grid-columm: 2 ;
+}
+
+.burger3 {
+    grid-columm: 3 ;
 }
 
 

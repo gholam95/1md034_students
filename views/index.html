@@ -11,42 +11,33 @@
     <main>
       
       <header id="header">
-      <h1 id="restaurantName">Welcome to The Affes Burger</h1>
-    <img src="img/headerpic.jpg" alt="Picture of a burger"
-         title="The Affes burger" class="differentSection" id="headerpic">
+        <h1 id="restaurantName">Welcome to The Affes Burger</h1>
+        <img src="img/headerpic.jpg" alt="Picture of a burger"
+             title="The Affes burger" class="differentSection" id="headerpic">
       </header>
       
       <section id="burger" class="differentSection">
-        <h2>Select The burger</h2>
-        <p>Choose from our delicious selections of The burgers </p>
-      <!--Table with our three burgers -->
-      <table>
-        <thead class="allergic">
-          <th>The Veg Burger</th>
-          <th>The Affes Special</th>
-          <th>The Chicken Burgers</th>
-        </thead>
+        <h2 class="allergic">Select The burger</h2>
+        <p class="allergic">Choose from our delicious selection of The burgers </p>
         
-        <tbody>
-          <td><img src="img/first-burger.jpg" alt="picture of the first burger"
-                   title="Veg Burger",
-                   width="450"> </td>
-          <td><img src="img/second-burger.jp2" alt="picture of the second burger"
-                   title="Affes special",
-                   width="450"> </td>
-          <td><img src="img/third-burger.jpg" alt="picture of the third burger"
-                   title="Chicken Burger",
-                   width="450"> </td>
-        </tbody>
-        <tfoot>
-          <td> <ul class="allergic">
+        <div class="wrapper">
+          <div class="burger1">
+            <h3 align="center" class="allergic">The Veg Burger</h3>
+            <img src="img/first-burger.jpg" alt="picture of the first burger"
+                 title="Veg Burger",
+                 width="420">
+            <ul class="allergic">
               <li>500 kCal</li>
               <li>High quality Chinese vegan burgers</li>
               <li>Homemade sauce</li>
               <li id="gluten">Both lactose and gluten free</li>
             </ul>
-          </td>
-          <td>
+          </div>
+          <div class="burger2">
+            <h3 align="center" class="allergic">The Affes special</h3>
+            <img src="img/second-burger.jp2" alt="picture of the second burger"
+                 title="Affes special",
+                 width="420">
             <ul class="allergic">
               <li>1800 kCal</li>
               <li>Classic cheese burger with bacon</li>
@@ -54,18 +45,22 @@
               <li>Contains Bacon</li>
               <li id="gluten">Does contains gluten and lactose</li>
             </ul>
-          </td>
-          <td>
+          </div>
+          <div class="burger3">
+            <h3 align="center" class="allergic">The Chicken burger</h3>
+            <img src="img/third-burger.jpg" alt="picture of the third burger"
+                 title="Chicken Burger",
+                 width="420">
             <ul class="allergic">
               <li>1000 kCal</li>
               <li>Deep fried Turkish chicken </li>
               <li>Homemade sauce</li>
               <li id="gluten">Does contains gluten</li>
             </ul>
-          </td>
-        </tfoot>
-      </table>
+          </div>
+        </div>
       </section>
+      
       <section id="orderinformation" class="differentSection">
         <h2>The Customer information</h2>
         <p>Please provide you contact information</p>
