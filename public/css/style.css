@@ -40,10 +40,21 @@ table {
     margin: 0 auto;
 }
 
-section {
+/*section {*/
     /*margin: 0 0 5% 5%;*/
-    margin-left: 3%;
+    /*margin-left: 3%;
+
     margin-right: 3%;
+}*/
+
+.differentSection {
+    margin-left: 3%;
+    margin-right: 3%; 
+}
+
+#headerpic {
+    width: 94%;
+    opacity: 0.5;
 }
 
 button {
