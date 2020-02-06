@@ -74,11 +74,13 @@ button {
     overflow: hidden;
 }
 
-.wrapper {
+
+#wrapper {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     Background-color: #000000;
     color: #444;
+    
 }
 
 .burger1 {
@@ -91,6 +93,11 @@ button {
 
 .burger3 {
     grid-columm: 3 ;
+}
+
+.imageClass {
+    
+    width: 100%;
 }
 
 

@@ -3,8 +3,8 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://vuejs.org/js/vue.js"></script>
-    <script src="js/js_script.js"></script>
-    <script src="js/vue_script.js"></script>
+    <script src="js/js_script.js" defer></script>
+    <script src="js/vue_script.js" defer></script>
     <title>Affes Burger</title>
     <!-- charset="utf-8 är attribut, den säger att vi får ha åäö"-->
     <meta charset="utf-8"/>
@@ -23,8 +23,8 @@
         <h2 class="allergic">Select The burger</h2>
         <p class="allergic">Choose from our delicious selection of The burgers </p>
         
-        <div class="wrapper">
-          <div class="burger1">
+        <div id="wrapper">
+         <!-- <div class="burger1">
             <h3 align="center" class="allergic">The Veg Burger</h3>
             <img src="img/first-burger.jpg" alt="picture of the first burger"
                  title="Veg Burger",
@@ -60,7 +60,7 @@
               <li>Homemade sauce</li>
               <li id="gluten">Does contains gluten</li>
             </ul>
-          </div>
+          </div>-->
         </div>
       </section>
       
