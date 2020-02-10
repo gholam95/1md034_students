@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://vuejs.org/js/vue.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
     <script src="js/js_script.js" defer></script>
     <script src="js/vue_script.js" defer></script>
     <title>Affes Burger</title>
@@ -25,64 +26,16 @@
         
         <div id="wrapper">
           
-          <div v-for="burger in vueMenu">
+          <div v-for="burger in food">
             <h3 align id="burgerNames"> {{burger.name}}</h3>
             <img :src="burger.img" width="270" height="175">
             <ul>
               <li>{{burger.desc}} </li>
-              <li>{{burger.calorie}}</li>
+              <li>{{burger.kCal}}</li>
               <li id="allergy">{{burger.allergy}}</li>
               <li>{{burger.ingredients}}</li>
             </ul>
             </div>
-
-
-
-
-
-
-
-
-
-
-          
-         <!-- <div class="burger1">
-            <h3 align="center" class="allergic">The Veg Burger</h3>
-            <img src="img/first-burger.jpg" alt="picture of the first burger"
-                 title="Veg Burger",
-                 width="420">
-            <ul class="allergic">
-              <li>500 kCal</li>
-              <li>High quality Chinese vegan burgers</li>
-              <li>Homemade sauce</li>
-              <li id="gluten">Both lactose and gluten free</li>
-            </ul>
-          </div>
-          <div class="burger2">
-            <h3 align="center" class="allergic">The Affes special</h3>
-            <img src="img/second-burger.jp2" alt="picture of the second burger"
-                 title="Affes special",
-                 width="420">
-            <ul class="allergic">
-              <li>1800 kCal</li>
-              <li>Classic cheese burger with bacon</li>
-              <li>The Affes homemade special sauce </li>
-              <li>Contains Bacon</li>
-              <li id="gluten">Does contains gluten and lactose</li>
-            </ul>
-          </div>
-          <div class="burger3">
-            <h3 align="center" class="allergic">The Chicken burger</h3>
-            <img src="img/third-burger.jpg" alt="picture of the third burger"
-                 title="Chicken Burger",
-                 width="420">
-            <ul class="allergic">
-              <li>1000 kCal</li>
-              <li>Deep fried Turkish chicken </li>
-              <li>Homemade sauce</li>
-              <li id="gluten">Does contains gluten</li>
-            </ul>
-          </div>-->
         </div>
       </section>
       

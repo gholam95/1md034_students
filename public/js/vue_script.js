@@ -34,7 +34,7 @@ data: {
 </div>
 */
 
-const vm = new Vue({
+/*const vm = new Vue({
     el: '#wrapper',
     data: {
         burger1: theVeganBurger,
@@ -43,5 +43,13 @@ const vm = new Vue({
         burger4: theSchneeBurger,
         burger5: theSnowBurger,
         vueMenu: menu
+    }
+    })*/
+
+//Here we use json list
+const vm = new Vue({
+    el: '#wrapper',
+    data: {
+        food: food
     }
 })
