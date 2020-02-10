@@ -79,7 +79,8 @@ button {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     Background-color: #000000;
-    color: #444;
+    /*color: #444;*/
+    color: #ffffff;
     
 }
 
@@ -100,4 +101,11 @@ button {
     width: 100%;
 }
 
+#burgerNames{
+    text-align: center;
+}
+
+#allergy{
+    font-weight: bold;
+}
 

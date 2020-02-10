@@ -33,3 +33,15 @@ data: {
     </li>
 </div>
 */
+
+const vm = new Vue({
+    el: '#wrapper',
+    data: {
+        burger1: theVeganBurger,
+        burger2: theAffesSpecial,
+        burger3: theChickenBurger,
+        burger4: theSchneeBurger,
+        burger5: theSnowBurger,
+        vueMenu: menu
+    }
+})

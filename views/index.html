@@ -24,6 +24,28 @@
         <p class="allergic">Choose from our delicious selection of The burgers </p>
         
         <div id="wrapper">
+          
+          <div v-for="burger in vueMenu">
+            <h3 align id="burgerNames"> {{burger.name}}</h3>
+            <img :src="burger.img" width="270" height="175">
+            <ul>
+              <li>{{burger.desc}} </li>
+              <li>{{burger.calorie}}</li>
+              <li id="allergy">{{burger.allergy}}</li>
+              <li>{{burger.ingredients}}</li>
+            </ul>
+            </div>
+
+
+
+
+
+
+
+
+
+
+          
          <!-- <div class="burger1">
             <h3 align="center" class="allergic">The Veg Burger</h3>
             <img src="img/first-burger.jpg" alt="picture of the first burger"

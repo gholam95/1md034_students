@@ -102,6 +102,7 @@ let theSchneeBurger = new menuItem("The Schnee Burger", "High quality Finnish me
 let theSnowBurger = new menuItem("The Snow Burger", "Burger description", "100 kCal", "Lactose and gluten free", "Burger ingredients", "https://media.mnn.com/assets/images/2017/06/sonic_mushroom_beef_burger.jpg.653x0_q80_crop-smart.jpg");
 
 let menu = [theVeganBurger, theAffesSpecial, theChickenBurger, theSchneeBurger, theSnowBurger];
+/*
 let wrapper = document.getElementById("wrapper");
 let i = 0;
 
@@ -154,4 +155,4 @@ for(i; i< 5; i++){
     wrapper.appendChild(theDiv);
     
 }
-
+*/
