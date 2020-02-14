@@ -1,6 +1,6 @@
 let food = [
   {
-      "name": "The Vegan Burger",
+      "name": "The Neige Burger",
       "desc": "High quality Chinese vegan burger",
       "kCal": 500,
       "allergy": "Lactose and Gluten free",
@@ -11,7 +11,7 @@ let food = [
   },
 
     {
-        "name": "The Affes special",
+        "name": "The Nieve special",
         "desc": "Classis cheese burger with bacon",
         "kCal": 1800,
         "allergy": "Contains Gluten and Lactose",
@@ -21,7 +21,7 @@ let food = [
         "img": "https://www.sbs.com.au/food/sites/sbs.com.au.food/files/styles/full/public/lotus-burger-lead.jpg?itok=HQnBHNu2&mtime=1522649088"
     },
     {
-        "name": "The Chicken burger",
+        "name": "The Neve burger",
         "desc": "Deep fried Turkish chicken",
         "kCal": 1000,
         "allergy": "Contains Gluten",

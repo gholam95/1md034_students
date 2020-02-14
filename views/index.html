@@ -12,7 +12,7 @@
   </head>
   
   <body>
-    <main>
+    <main id="theMain">
       
       <header id="header">
         <h1 id="restaurantName">Welcome to The Affes Burger</h1>
@@ -29,12 +29,14 @@
           <div v-for="burger in food">
             <h3 align id="burgerNames"> {{burger.name}}</h3>
             <img :src="burger.img" width="270" height="175">
+            <input type="checkbox" :value="burger.name" id="checkbox" v-model="checked">
             <ul>
               <li>{{burger.desc}} </li>
               <li>{{burger.kCal}}</li>
               <li id="allergy">{{burger.allergy}}</li>
               <li>{{burger.ingredients}}</li>
             </ul>
+            
             </div>
         </div>
       </section>
@@ -45,27 +47,27 @@
         <p>
           <label for="fullname">Full name</label><br>
           <!--Element can be given names, and in case of form, the name attribute is used -->
-          <input type="text" id="fullname" name="name" required="required"
-                 placeholder="First- and Last name">
+          <input id="fullname" type="text" id="fullname" name="name" required="required"
+                 placeholder="First- and Last name" v-model="name">
         </p>
         <p>
           <label for="email">E-mail</label><br>
-          <input type="email" id="email" name="email" required="required"
-                 placeholder="E-mail adress">
+          <input id="email" type="email" id="email" name="email" required="required"
+                 placeholder="E-mail adress" v-model="email">
         </p>
         <p>
           <label for="streename">Street</label><br>
-          <input type="text" id="streename" name="street" required="required"
-                 placeholder="Street name">
+          <input id="streename"type="text" id="streename" name="street" required="required"
+                 placeholder="Street name" v-model="streetname">
         </p>
         <p>
           <label for="housenumber">House</label><br>
-          <input type="number" id="housenumber" name="housenumber" required="required"
-                 placeholder="House number">
+          <input id="numberhouse" type="number" id="housenumber" name="housenumber" required="required"
+                 placeholder="House number" v-model="housenumber">
         </p>
         <p>
           <label for="paymentoption">Payment options</label><br />
-          <select id="paymentoption" name="payment" >
+          <select id="paymentoption" name="payment" v-model="paymentOption" >
             <option>Credit card</option>
             <option>Cash</option>
             <option selected="selected">Swish</option>
@@ -73,22 +75,31 @@
             <option>Klarna</option>
           </select>
         </p>
+        <div id="gender">
         <label>Gender</label><br>
-        <input type="radio" id="female" name="gender" required="required">
+        <input type="radio" id="female" name="gender" required="required" v-model="theGender">
         <label for="name" align="right">Female</label><br>
 
-        <input type="radio" id="male" name="gender" required="required">
+        <input type="radio" id="male" name="gender" required="required" v-model="theGender">
         <label for="male">Male</label><br>
 
-        <input type="radio" id="nonbinary" name="gender" required="required">
+        <input type="radio" id="nonbinary" name="gender" required="required" v-model="theGender">
         <label for="nonbinary">Non-binary</label><br>
 
         <input type="radio" id="undisclosed" name="gender" required="required"
-               checked="checked">
+               checked="checked" v-model="theGender">
         <label for="undisclosed">Undisclosed</label><br>
+        </div>
       </section>
       <br>
-      <button type="submit"><img src="img/checksymbol.jpg" width="20" align="left"/>Send info</button>
+
+      <button id="orderButton" type="submit" v-on:click="markDone()">Place my order!</button>
+      
+      <br>
+
+      <span v-if="showOrder"> Your order information is: {{ checked }} {{ name }} {{ email }}
+        {{ streetname }} {{ housenumber }} {{ paymentOption }} {{theGender }} </span>
+      
     </main>
     <hr>
     

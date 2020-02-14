@@ -48,8 +48,23 @@ data: {
 
 //Here we use json list
 const vm = new Vue({
-    el: '#wrapper',
+    el: '#theMain',
     data: {
-        food: food
+        food: food,
+        name: '',
+        email: '',
+        streetname: '',
+        housenumber: '',
+        paymentOption: '',
+        theGender: '',
+        showOrder: false,
+        checked: []
+    },
+    
+    methods: {
+        markDone: function() {
+            orderInformation();
+            this.showOrder = true;
+        }
     }
 })
