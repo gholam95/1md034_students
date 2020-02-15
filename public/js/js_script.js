@@ -19,9 +19,9 @@ let orderInformation = function(){
         }
     }
 
-    console.log(name, email, street, payment, genderValue);
+    console.log(name, email, payment, genderValue);
     var returnValue = new Array();
-    returnValue = [name, email, street, payment, genderValue];
+    returnValue = [name, email, payment, genderValue];
     return returnValue;
 }
 
