@@ -1,10 +1,6 @@
-//Function to print "Button clicked" on the console
 let printText = function(){
     console.log("Button clicked")
 };
-
-//Comment out event listener according 4-4
-//button.addEventListener("click", printText);
 
 let orderInformation = function(){
     var name = document.getElementById("fullname").value;

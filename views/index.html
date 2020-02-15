@@ -8,7 +8,6 @@
     <script src="js/js_script.js" defer></script>
     <script src="js/vue_script.js" defer></script>
     <title>Affes Burger</title>
-    <!-- charset="utf-8 är attribut, den säger att vi får ha åäö"-->
     <meta charset="utf-8"/>
   </head>
   
@@ -47,7 +46,6 @@
         <p>Please provide you contact information</p>
         <p>
           <label for="fullname">Full name</label><br>
-          <!--Element can be given names, and in case of form, the name attribute is used -->
           <input id="fullname" type="text" id="fullname" name="name" required="required"
                  placeholder="First- and Last name" v-model="name">
         </p>
@@ -82,28 +80,34 @@
         
         <div id="gender">
           <label>Gender</label><br>
-          <input type="radio" id="female" name="gender" required="required" v-model="theGender">
+          <input type="radio" id="female" name="gender" value="Female" required="required" v-model="theGender">
           <label for="name" align="right">Female</label><br>
 
-          <input type="radio" id="male" name="gender" required="required" v-model="theGender">
+          <input type="radio" id="male" name="gender" value="Male" required="required" v-model="theGender">
           <label for="male">Male</label><br>
 
-          <input type="radio" id="nonbinary" name="gender" required="required" v-model="theGender">
+          <input type="radio" id="nonbinary" name="gender" value="Non-binary" required="required" v-model="theGender">
           <label for="nonbinary">Non-binary</label><br>
 
-          <input type="radio" id="undisclosed" name="gender" required="required"
+          <input type="radio" id="undisclosed" name="gender" value="Undisclosed" required="required"
                  checked="checked" v-model="theGender">
           <label for="undisclosed">Undisclosed</label><br>
         </div>
       </section>
       <br>
 
-      <button id="orderButton" type="submit" v-on:click="addOrder">Place my order!</button>
-      
+      <button id="orderButton" type="submit" v-on:click="addOrder()">Place my order!</button>
       <br>
-
-      <span v-if="showOrder"> Your order information is: {{ checked }} {{ name }} {{ email }}
-        {{theGender }} </span>
+      <span v-if="showOrder">
+        <h3> Order Information </h3>
+        <h4> Customer details </h4>
+        Name: {{ name }} <br>
+        Email: {{ email }} <br>
+        Gender: {{ theGender }} <br>
+        <h4> Order summary <h4>
+            <div v-for="theBurgers in checked">
+              {{ theBurgers }} </div>
+      </span>
       
     </main>
     <hr>

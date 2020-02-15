@@ -1,16 +1,3 @@
-/*const vm = new Vue({
-  el: '#wrapper',
-  data: {
-  burger1: theVeganBurger,
-  burger2: theAffesSpecial,
-  burger3: theChickenBurger,
-  burger4: theSchneeBurger,
-  burger5: theSnowBurger,
-  vueMenu: menu
-  }
-  })*/
-
-
 'use strict';
 const socket = io();
 
@@ -21,8 +8,6 @@ const vm = new Vue({
         food: food,
         name: '',
         email: '',
-        // streetname: '',
-        // housenumber: '',
         paymentOption: '',
         theGender: '',
         showOrder: false,
@@ -50,15 +35,16 @@ const vm = new Vue({
              * The click event object contains among other things different
              * coordinates that we need when calculating where in the map the click
              * actually happened. */
-          
+            this.showOrder = true,
             socket.emit('addOrder', {
                 orderId: this.getNext(),
                 details: {
                     x: this.order.details.x,
                     y: this.order.details.y,
                 },
-                
+                customerInformation: [this.name, this.email, this.paymentOption, this.theGender]
                 orderItems: this.checked,
+                //this.showOrder = true,
             });
         },
         markDone: function() {
