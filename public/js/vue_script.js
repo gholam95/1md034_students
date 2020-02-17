@@ -42,7 +42,7 @@ const vm = new Vue({
                     x: this.order.details.x,
                     y: this.order.details.y,
                 },
-                customerInformation: [this.name, this.email, this.paymentOption, this.theGender]
+                customerInformation: [this.name, this.email, this.paymentOption, this.theGender],
                 orderItems: this.checked,
                 //this.showOrder = true,
             });
